@@ -1,0 +1,29 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<HomePage>
+@{
+    Layout = "_Layout.cshtml";
+}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url(@Model.HeroImage?.Url())">
+                <div class="carousel-container">
+                    <div class="container">
+                        <h2 class="animate__animated animate__fadeInDown">@Model.Heading</h2>
+                        <p class="animate__animated animate__fadeInUp">@Model.Description</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End Hero -->
+
+
+
+    @await Component.InvokeAsync("PagedNewsList")
+
