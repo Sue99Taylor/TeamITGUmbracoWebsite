@@ -33,7 +33,7 @@ namespace TeamITG.Interview.Website
         {
 
             // Dependency Injection (NOTE: could write an extension method to keep these tidy)
-            services.AddScoped<IContentService, ContentService>();
+            services.AddScoped<IWebsiteContentService, WebsiteContentService>();
 
             services.AddUmbraco(_env, _config)
                 .AddBackOffice()

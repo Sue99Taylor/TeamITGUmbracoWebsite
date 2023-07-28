@@ -5,9 +5,9 @@ namespace TeamITG.Interview.Website.Web.ViewComponents
 {
     public class PagedNewsListViewComponent : ViewComponent
     {
-        private readonly IContentService _contentService;
+        private readonly IWebsiteContentService _contentService;
 
-        public PagedNewsListViewComponent(IContentService contentService)
+        public PagedNewsListViewComponent(IWebsiteContentService contentService)
         {
             _contentService = contentService;
         }

@@ -2,7 +2,7 @@
 
 namespace TeamITG.Interview.Website.Web.Services
 {
-    public interface IContentService
+    public interface IWebsiteContentService
     {
         Task<PagedNewsList> GetNewsItems(int pageNumber);
     }

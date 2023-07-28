@@ -4,11 +4,11 @@ using Umbraco.Cms.Web.Common;
 
 namespace TeamITG.Interview.Website.Web.Services
 {
-    public class ContentService : IContentService
+    public class WebsiteContentService : IWebsiteContentService
     {
         private readonly IUmbracoHelperAccessor _helper;
 
-        public ContentService(IUmbracoHelperAccessor umbracoHelperAccessor)
+        public WebsiteContentService(IUmbracoHelperAccessor umbracoHelperAccessor)
         {
             _helper = umbracoHelperAccessor;
         }
