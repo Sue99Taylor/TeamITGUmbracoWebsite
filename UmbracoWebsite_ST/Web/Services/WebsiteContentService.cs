@@ -28,12 +28,12 @@ namespace TeamITG.Interview.Website.Web.Services
 
                 nodes = GetPageFromNodes(pageNumber, itemsPerPage, allNodes);
 
-                // Reset back to page 1
-                if (nodes.Count() == 0)
-                {
-                    resultingPageNumber = 1;
-                    nodes = GetPageFromNodes(resultingPageNumber, itemsPerPage, allNodes);
-                }
+                //// Reset back to page 1
+                //if (nodes.Count() == 0)
+                //{
+                //    resultingPageNumber = 1;
+                //    nodes = GetPageFromNodes(resultingPageNumber, itemsPerPage, allNodes);
+                //}
             }
 
             var vm = new PagedNewsList()

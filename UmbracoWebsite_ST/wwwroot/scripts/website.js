@@ -9,7 +9,9 @@ $(document).ready(function () {
                 data: pageData,
                 type: "GET",
                 success: function (html) {
-                    $('#newslist').replaceWith(html);
+                    var pn = $('#PageNumber');
+                    $(pn).remove();
+                    $('#newslist').append(html);
                 },
                 error: function () {
                     console.log("Error getting next page");
